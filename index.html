@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ksar Hellal 2050</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/received_2092805024291886.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  <style>
+    body {
+      font-family: "Raleway", Arial, sans-serif
+    }
+
+    .w3-row img {
+      margin-bottom: -8px
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #myImg:hover {
+      opacity: 0.7;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+
+    .modal-content,
+    #caption {
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+      from {
+        -webkit-transform: scale(0)
+      }
+
+      to {
+        -webkit-transform: scale(1)
+      }
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .modal-content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-content" style="max-width:1500px">
+
+    <!-- Header -->
+    <header class="w3-container w3-xlarge w3-padding-24">
+      <a href="#about" class="w3-right w3-button w3-white">مؤتمر 2 مارس 1934 قصر هلال</a>
+      <img src="./img/received_2092805024291886.png" style="height: 40px; width: 40px;">
+      <a href="https://www.facebook.com/2050ksarhellal/?ref=br_rs" target="blank"
+        class="w3-left w3-button w3-white">جمعية قصر هلال 2050</a>
+    </header>
+
+    <!-- Photo Grid -->
+    <div class="w3-row">
+      <div class="w3-half">
+        <img src="./img/img1.jpg" id="myImg" alt="المشاركون في مؤتمر 2 مارس 1934 بقصر هلال" style="width:100%">
+        <img src="./img/ahmed bourkhis.jpg" style="width:100%" id="myImg1" alt="أحمد بورخيص">
+        <img src="./img/ahmed ayed.jpg" id="myImg2" alt="أحمد عياد" style="width:100%">
+        <img src="./img/img2.jpg" id="myImg3"
+          alt="من رجال مؤتمر قصر هلال 1934 جمع من الأحرار الدستوريين الذين شهدوا مؤتمر قصر هلال و إستجابوا لدعوة الزعيم الحبيب بورڨيبة"
+          style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="./img/dar ayed.jpg" id="myImg4" alt=" 'باب دار عياد 'دار المؤتمر" style="width:100%">
+        <img src="./img/bourgiba.jpg" id="myImg5" alt="إجتماع الزعيم بورڨيبة بعامة الشعب" style="width:100%">
+        <img src="./img/mohamed brahim.jpg" id="myImg6" alt="محمد براهم" style="width:100%">
+        <img src="./img/fraj limayem.jpg" id="myImg7" alt="فرج الإمايم" style="width:100%">
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+      <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+          modal.style.display = "none";
+        }
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg1");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+          modal.style.display = "none";
+        }
+        // img 2
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg2");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+          modal.style.display = "none";
+        }
+        // /img2
+        // img3
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg3");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+          modal.style.display = "none";
+        }
+        // /img3
+        // img 4
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg4");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+          modal.style.display = "none";
+        }
+        // /img4
+        // img5
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg5");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+          modal.style.display = "none";
+        }
+        // /img5
+        // img6
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg6");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+          modal.style.display = "none";
+        }
+        // /img6
+        // img7
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg7");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+          modal.style.display = "none";
+        }
+        // /img7
+      </script>
+
+
+    </div>
+
+    <!-- End Page Content -->
+  </div>
+
+  <!-- Footer / About Section -->
+  <footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+    <h2>مؤتمر 2 مارس 1934 قصر هلال</h2>
+    <img src="./img/dar ayed in.jpg" class="w3-image w3-padding-32" width="70%">
+    <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+      <p style="font-size: large;">اجتمع الحبيب بورقيبة ذاك الشاب الذي ما لبث ان تجاوز ربيعه الثلاثين رفقة عدد من الشبان
+        في منزل عياد لم يكن يدور بخلد أحدهم أن اجتماع "دار عياد"بقصر هلال سيكون نقطة فاصلة في تاريخ الحركة الوطنية
+        وتحرير البلاد من المستعمر وبناء الدولة الحديثة
+        بادر الحبيب بورقيبة رفقة الشباب الدستوري إلى الانشقاق على مؤسس الحزب الدستوري الشيخ عبد العزيز الثعالبي تدفعه في
+        ذلك حماسة الشباب ونخوة الوطنية وايمانه بأن الحركة
+        .الوطنية تتطلب دماء جديدة عجز
+        الزيتونيون عن ضخها
+        شهدت دار عياد ولادة الحزب الحر الدستوري الجديد، وقيادته التي سميت منذ ذلك الوقت "الديوان السياسي" ولم يكن
+        بورقيبة يدرك انذاك انه سيقود مسيرة الاستقلال وبناء تونس الحديثة بعد 18 سنة من ذلك التاريخ الا أن دافعه في ذلك
+        وثباته أمام آلة الاضطهاد الاستعماري الرهيب، وإيمانه بعدالة قضيته هي من دفعه لذلك
+      </p>
+      <br>
+      <p>Created and developed by Medimegh Mehdi </p>
+      <a href="https://www.facebook.com/mehdi.medimegh" target="blank" class="w3-hover-text-green"><img
+          src="./img/Capture.png" alt="logo" style="height: 60px; width: 60px;"></a>
+      <br>
+      <a href="https://www.instagram.com/medimegh_mehdi/?hl=fr" target="blank" class="w3-hover-text-green"
+        style="text-decoration: none;" style="font-size: bold;"> Contact me here !</a></p>
+
+  </footer>
+
+</body>
+
+</html>
